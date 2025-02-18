@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
           <ul>
             <li><Link href="/about-us">À propos de nous</Link></li>
             <li><Link href="/contact">Contact</Link></li>
-            <li><Link href="/corporate-governance">Gouvernance d'entreprise</Link></li>
+            <li><Link href="/corporate-governance">Gouvernance d&apos;entreprise</Link></li>
             <li><Link href="/sustainability">La durabilité</Link></li>
             <li><Link href="/investor-relations">Investor Relations</Link></li>
           </ul>
@@ -27,14 +27,14 @@ const Contact: React.FC = () => {
         <main className={styles.content}>
           <h2>Service client</h2>
           <p>
-            Consultez la page du <Link href="https://www.youtube.com/">Service client</Link> pour trouver les coordonnées, les heures d'ouverture et les réponses aux questions les plus souvent posées.
+            Consultez la page du <Link href="https://www.youtube.com/">Service client</Link> pour trouver les coordonnées, les heures d&apos;ouverture et les réponses aux questions les plus souvent posées.
           </p>
           <p>
             Sur notre <Link href="#">portail Klarna</Link>, vous pouvez consulter tous vos achats en un seul endroit. Une fois connecté à votre compte Klarna, vous pouvez payer et traiter vos commandes en toute simplicité.
           </p>
           <h2>Uniquement pour les autorités de réglementation</h2>
           <p>
-            Utilisez l'une des options suivantes pour nous contacter :
+            Utilisez l&apos;une des options suivantes pour nous contacter :
           </p>
           <p><strong>Adresse postale :</strong></p>
           <p>Klarna AB<br />
@@ -43,13 +43,13 @@ const Contact: React.FC = () => {
             Sweden
           </p>
           <p><strong>Téléphone :</strong></p>
-          <p>Trouvez <Link href="#">ici</Link> nos coordonnées et horaires d'ouvertures.</p>
+          <p>Trouvez <Link href="#">ici</Link> nos coordonnées et horaires d&apos;ouvertures.</p>
           <p>
-            Si vous êtes déjà inscrit comme vendeur chez Klarna et que vous avez besoin d'aide, consultez nos pages <Link href="#">d'assistance aux commerçants</Link> pour trouver les coordonnées, les heures d'ouverture et les réponses aux questions les plus souvent posées.
+            Si vous êtes déjà inscrit comme vendeur chez Klarna et que vous avez besoin d&apos;aide, consultez nos pages <Link href="#">d&apos;assistance aux commerçants</Link> pour trouver les coordonnées, les heures d&apos;ouverture et les réponses aux questions les plus souvent posées.
           </p>
           <h2>Ventes</h2>
           <p>
-            Vous avez une boutique en ligne ? Vous souhaitez vendre avec Klarna ? Vous trouverez plus d'informations sur nos <Link href="#">pages consacrées aux entreprises</Link>.
+            Vous avez une boutique en ligne ? Vous souhaitez vendre avec Klarna ? Vous trouverez plus d&apos;informations sur nos <Link href="#">pages consacrées aux entreprises</Link>.
           </p>
           <h2>Confidentialité</h2>
           <p>

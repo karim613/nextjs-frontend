@@ -38,10 +38,10 @@ const Footer: React.FC = () => {
             <li>Service Client</li>
             <li>Login</li>
             <li>Qu’est ce que Swipe</li>
-            <li>L'appli shopping de Swipe</li>
+            <li>L&apos;appli shopping de Swipe</li>
             <li>Boutiques Swipe</li>
             <li>Le blog Swipe</li>
-            <li>Politique de protection de l'acheteur Swipe</li>
+            <li>Politique de protection de l&apos;acheteur Swipe</li>
             <li>Commentaires et réclamations</li>
             <li>Protection contre la fraude</li>
           </ul>

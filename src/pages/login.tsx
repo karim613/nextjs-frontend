@@ -61,7 +61,7 @@ const Login: React.FC = () => {
 
         <h2 className={styles.title}>Se connecter</h2>
         <p className={styles.subtitle}>
-          Vous n'avez pas de compte ?{" "}
+          Vous n&apos;avez pas de compte ?{" "}
           <Link href="/signup" className={styles.link}>
             Créer un compte
           </Link>

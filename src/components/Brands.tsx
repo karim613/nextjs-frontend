@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import styles from '../styles/Brands.module.css';
+import Image from "next/image";
 
 type Brand = {
   name: string;
@@ -62,7 +63,13 @@ const Brands: React.FC = () => {
           {brands.slice(currentIndex, currentIndex + cardsToShow).map((brand, index) => (
             <div key={index} className={styles.brandCard}>
               <a href={brand.websiteUrl} target="_blank" rel="noopener noreferrer">
-                <img src={brand.imageUrl} alt={brand.name} className={styles.brandImage} />
+              <Image 
+                  src={brand.imageUrl} 
+                  alt={brand.name} 
+                  className={styles.brandImage}
+                  width={150} // adjust width as needed
+                  height={150} // adjust height as needed
+                />
                 <p>{brand.name}</p>
               </a>
             </div>

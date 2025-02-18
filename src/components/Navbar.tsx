@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
       <ul className={styles.navLinks}>
         <li><a href="#">Shopping</a></li>
         <li><a href="#">Finances</a></li>
-        <li><a href="#">Qu'est ce que Swipe</a></li>
+        <li><a href="#">Qu&apos;est ce que Swipe</a></li>
         <li><a href="#">Aide</a></li>
       </ul>
       <div className={styles.buttonGroup}>
@@ -43,12 +43,12 @@ const Navbar: React.FC = () => {
           <hr />
           <li><a href="#">Shopping</a></li>
           <li><a href="#">Finances</a></li>
-          <li><a href="#">Qu'est ce que Klarna</a></li>
+          <li><a href="#">Qu&apos;est ce que Klarna</a></li>
           <li><a href="#">Aide</a></li>
         </ul>
         <div className={styles.sideButtonGroup}>
           <button className={`${styles.btn} ${styles.sideLoginBtn}`}>Login</button>
-          <button className={`${styles.btn} ${styles.downloadBtn}`}>Téléchargez l'appli</button>
+          <button className={`${styles.btn} ${styles.downloadBtn}`}>Téléchargez l&apos;appli</button>
         </div>
       </div>
     </nav>

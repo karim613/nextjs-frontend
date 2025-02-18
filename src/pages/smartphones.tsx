@@ -8,6 +8,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Lowerfooter from '../components/Lowerfooter';
 import styles from '../styles/Pages/Smartphones.module.css';
+import Image from "next/image";
 
 // Import SimpleBar and handle SSR
 import dynamic from 'next/dynamic';
@@ -693,7 +694,13 @@ const Smartphones = ({
                 Compare
               </label>
             </div>
-            <img src={phone.imgSrc} alt={phone.name} />
+            <Image 
+                  src={phone.imgSrc} 
+                  alt={phone.name} 
+                  className={styles.brandImage}
+                  width={150} // adjust width as needed
+                  height={150} // adjust height as needed
+                />
           </div>
           <h3 className={styles.productName}>{phone.name}</h3>
           <p className={styles.productPrice}>{phone.price}</p>
@@ -763,7 +770,13 @@ const Smartphones = ({
           <div className={styles.compareItemsWrapper}>
             {comparedPhones.map((phone) => (
               <div key={phone.id} className={styles.compareItem}>
-                <img src={phone.imgSrc} alt={phone.name} />
+                            <Image 
+                  src={phone.imgSrc} 
+                  alt={phone.name} 
+                  className={styles.brandImage}
+                  width={150} // adjust width as needed
+                  height={150} // adjust height as needed
+                />
                 <div className={styles.compareDetails}>
                   <p className="productName">{phone.name}</p>
                   <p className="productPrice">{phone.price}</p>

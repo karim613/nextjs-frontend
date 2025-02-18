@@ -17,7 +17,7 @@ const AboutUs: React.FC = () => {
           <ul>
             <li><Link href="/about-us">À propos de nous</Link></li>
             <li><Link href="/contact">Contact</Link></li>
-            <li><Link href="/corporate-governance">Gouvernance d'entreprise</Link></li>
+            <li><Link href="/corporate-governance">Gouvernance d&apos;entreprise</Link></li>
             <li><Link href="/sustainability">La durabilité</Link></li>
             <li><Link href="/investor-relations">Investor Relations</Link></li>
           </ul>
@@ -29,14 +29,14 @@ const AboutUs: React.FC = () => {
             mission reste aussi pertinente que jamais : rendre le paiement aussi simple, transparent et sécurisé que possible.
           </p>
           <p>
-            Klarna est aujourd'hui l'une des plus grandes banques européennes et fournit des solutions de paiement à
+            Klarna est aujourd&apos;hui l&apos;une des plus grandes banques européennes et fournit des solutions de paiement à
             150 millions de consommateurs via plus de 500 000 marchands dans 45 pays. Klarna propose des
             paiements directs, des options de paiement après la livraison et des plans de paiement en plusieurs
-            versements, le tout avec une expérience d'achat en un clic qui permet aux consommateurs de payer quand
+            versements, le tout avec une expérience d&apos;achat en un clic qui permet aux consommateurs de payer quand
             et comment ils le souhaitent.
           </p>
           <p>
-            L'acquisition de SOFORT par l'entreprise en 2014 a donné naissance au Groupe Klarna. Klarna est soutenue
+            L&apos;acquisition de SOFORT par l&apos;entreprise en 2014 a donné naissance au Groupe Klarna. Klarna est soutenue
             par des investisseurs tels que Sequoia Capital, Bestseller, Permira, Visa et Atomico.
           </p>
           <p><strong>Klarna France fait partie du Groupe Klarna</strong></p>

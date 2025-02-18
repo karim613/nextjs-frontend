@@ -2,6 +2,8 @@
 
 import React, { useState, useEffect } from 'react';
 import styles from '../styles/Categories.module.css';
+import Image from "next/image";
+
 
 type Category = {
   name: string;
@@ -57,7 +59,13 @@ const Categories: React.FC = () => {
         <div className={styles.categoriesWrapper}>
           {categories.slice(currentIndex, currentIndex + cardsToShow).map((category, index) => (
             <div key={index} className={styles.categoryCard}>
-              <img src={category.imageUrl} alt={category.name} className={styles.categoryImage} />
+                <Image 
+                  src={category.imageUrl} 
+                  alt={category.name} 
+                  className={styles.brandImage}
+                  width={150} // adjust width as needed
+                  height={150} // adjust height as needed
+                />
               <p>{category.name}</p>
             </div>
           ))}
