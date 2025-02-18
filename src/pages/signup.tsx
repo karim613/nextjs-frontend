@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import styles from "../styles/pages/signup.module.css";
+import styles from "../styles/Pages/signup.module.css";
 
 const SignUpPage: React.FC = () => {
   const [email, setEmail] = useState("");

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import styles from "../styles/pages/signup.module.css"; // Reusing the same CSS module
+import styles from "../styles/Pages/signup.module.css"; // Reusing the same CSS module
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState("");
