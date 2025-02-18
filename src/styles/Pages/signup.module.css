@@ -1,0 +1,172 @@
+/* Background overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Modal box */
+  .modal {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    width: 700px;
+    height: 600px;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Header section */
+  .header {
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .brand {
+    background: #ffb3d9;
+    background: linear-gradient(10deg, #000000, #15021e);
+    background: linear-gradient(10deg, #000000, #2a003d);
+    color: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+  }
+  
+  .close {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  /* Title and Subtitle */
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #0c0c0c;
+    margin-bottom: 5px;
+  }
+  
+  .subtitle {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .link {
+    color: #6a1b9a;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Input Container */
+  .inputContainer {
+    display: flex;
+    align-items: center;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .icon {
+    font-size: 18px;
+    color: #666;
+    margin-right: 15px;
+  }
+  
+  .input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  /* Button */
+  .button {
+    width: 100%;
+    background: #0c0c0c;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    margin-top: 50px;
+  }
+  
+  .button:hover {
+    background: #1a1a1a;
+  }
+  
+  /* Footer */
+  .footerText {
+    font-size: 15px;
+    color: #666;
+    margin-top: 15px;
+  }
+  
+  .remember {
+    font-weight: bold;
+    color: #6a1b9a;
+  }
+  
+  /* Legal Text */
+  .legal {
+    font-size: 15px;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+
+
+
+
+
+
+/* Smaller Screens (Tablet, Mobile) */
+@media (max-width: 768px) {
+  .modal {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+  }
+
+  .close {
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: transparent;
+  }
+}

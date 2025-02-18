@@ -1,0 +1,57 @@
+/* src/styles/globals.css */
+
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set a base font size and family */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: #333;
+  }
+  
+  /* Ensure links are styled consistently */
+  a {
+    color: #0070f3;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .button-container {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-area {
+    position: absolute;
+    top: -20px; /* Adjust this value to increase the hover area */
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+}
+
+.ctaBtn {
+    padding: 0.75rem 2rem;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    position: relative;
+    z-index: 1; /* Ensure the button is above the hover area */
+}
+
+.hover-area:hover + .ctaBtn, 
+.ctaBtn:hover {
+    background-color: #005bb5; /* Change to a different color on hover */
+}

@@ -1,0 +1,226 @@
+/* Base styles that apply to all screens */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #2c003e, #000000);
+  background: linear-gradient(135deg, #000000, #2a003d);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.btn {
+  padding: 0.6rem 0.85rem;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.loginBtn {
+  background-color: transparent;
+  border: 1px solid white;
+  margin-right: -10px;
+  font-size: 0.775rem;
+}
+
+.signUpBtn {
+  background-color: #0070f3;
+  border: 1px solid transparent;
+  background-color: white;
+  background: rgb(255, 255, 255);
+  color: black;
+  margin-right: -10px;
+  font-size: 0.775rem;
+}
+
+.downloadBtn {
+  background-color: black;
+  border: 1px solid #000;
+}
+
+.sideLoginBtn {
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+.signUpBtn:hover,
+.sideLoginBtn:hover {
+  background-color: rgb(223, 223, 223);
+  background-color: #000;
+  color: white;
+}
+
+.loginBtn:hover {
+  background-color: rgb(83, 83, 83);
+  background-color: #333;
+  background-color: white;
+  color: black;
+}
+
+
+
+.downloadBtn:hover {
+  background-color: rgb(83, 83, 83);
+  background-color: #333;
+}
+
+/* Animation for Side Menu */
+.sideMenu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 80%;
+  max-width: 300px;
+  height: 100%;
+  background-color: white;
+  padding: 1.5rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  transition: left 1s ease; /* Slower transition for the slide */
+  z-index: 1000;
+}
+
+.showSideMenu {
+  left: 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s;
+  z-index: 999;
+}
+
+.showOverlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menuHeader {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.5rem;
+}
+
+.closeMenu {
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-top: -0.5rem;
+  padding-bottom: 0.8rem;
+}
+
+.sideNavLinks {
+  list-style: none;
+  padding: 0;
+  margin-top: 0px;
+  margin-top: -1.5rem;
+}
+
+.sideNavLinks li {
+  margin-bottom: 0.9rem;
+}
+
+.sideNavLinks a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  transition: color 0.1s ease;
+}
+
+.sideNavLinks a:hover {
+  color: #2a003d;
+  color: #555;
+}
+
+.sideButtonGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.sideButtonGroup .btn {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 50px;
+}
+
+/* Larger Screens (Desktop, Laptop) */
+@media (min-width: 769px) {
+  .menuIcon {
+    display: none; /* Hide the menu icon on large screens */
+  }
+
+  .navLinks {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    margin-left: 100px;
+  }
+
+  .navLinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-size: 0.800rem;
+  }
+
+  .buttonGroup {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+/* Smaller Screens (Tablet, Mobile) */
+@media (max-width: 768px) {
+  .leftSection {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
+
+  .navLinks {
+    display: none; /* Hide the navLinks on small screens */
+  }
+
+  .menuIcon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: -15px;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+
+  .signUpBtn {
+    display: none; /* Hide the Sign Up button on small screens */
+  }
+}

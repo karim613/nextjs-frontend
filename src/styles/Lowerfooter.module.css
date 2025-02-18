@@ -1,0 +1,41 @@
+.Lowerfooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #555;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: linear-gradient(135deg, #2c003e, #000000);
+    background: linear-gradient(135deg, #000000, #2a003d);
+  }
+  
+  .copyright {
+    font-size: 12px;
+    color: #bbbbbb;
+    padding-bottom: 20px;
+    padding-left: 30px;
+  }
+  
+  .bottomLinks {
+    display: flex;
+    gap: 20px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+  }
+
+  .bottomLinks a {
+    color: #bbbbbb;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  
+  .bottomLinks a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .Lowerfooter {
+      padding: 40px 20px;
+    }
+  
+  }

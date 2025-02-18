@@ -1,0 +1,362 @@
+/* styles/Pages/Product.module.css */
+
+
+
+
+  .container {
+    padding: 20px;
+    max-width: 1300px;
+    margin: auto;
+  }
+  
+  .breadcrumbs {
+    margin-bottom: 25px;
+    font-size: 1rem;
+    color: #888;
+  }
+  
+  .breadcrumbs a {
+    color: #0070f3;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  .breadcrumbs a:hover {
+    color: #0070f3;
+    text-decoration: underline;
+  }
+  
+  .productPage {
+    display: flex;
+    gap: 40px;
+  }
+  
+
+  
+  .productInfo {
+    flex: 1;
+  }
+  
+  .productInfo h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .stars {
+    color: black;
+    font-size: 16px;
+    font-size: 20.10px; /* Increased by 30% from 16px */
+  }
+  
+  .priceRange {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .brand {
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .storageOptions {
+    display: flex;
+    gap: px;
+    margin-bottom: 15px;
+    margin-left: -5px;
+  }
+  
+  .storageButton {
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+
+
+
+    background-color: white;
+    color: black;
+    padding: 15px 20px 15px 20px;
+    border-radius: 25px; /* Border radius 50% */
+    margin: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.s;
+    font-size: 0.9rem;
+  }
+  
+  .storageButton:hover {
+    border-color: #0070f3;
+  }
+  
+
+  
+
+  
+
+
+
+
+
+  .colorOptions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    margin-left: -5px;
+  }
+  
+  .colorOption {
+    background-color: white;
+    color: black;
+    padding: 15px 20px;
+    border-radius: 25px;
+    margin: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+  }
+  
+  .colorOption:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .colorCircle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+  }
+  
+
+
+
+  .productDescription {
+    margin: 10px 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    word-wrap: break-word; /* Allows wrapping of long words */
+    max-width: 100%;
+    white-space: pre-wrap; /* Allows wrapping */
+    display: block;
+  }
+  
+  .productDescription::after {
+    content: '';
+    display: block;
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+
+
+
+
+  
+  .galleryContainer {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .thumbnailList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px
+  }
+  
+  .thumbnail {
+    border-radius: 10%;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: border-color 0.3s;
+  }
+  
+  .thumbnail img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10%;
+    margin-bottom: -5px;
+    margin-top: 3px;
+  }
+  
+  .thumbnail:hover {
+    border-color: #000000;
+  }
+  
+  .selectedThumbnail {
+    border-color: #000000;
+  }
+  
+  .mainImage {
+    flex: 1;
+  }
+  
+  .mainImage img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 30px;
+    background-color: rgba(247, 247, 247, 0.638);
+    background-color: rgba(247, 247, 280, 255);
+    padding: 10px;
+    cursor: pointer;
+  }
+
+
+
+
+  
+
+
+
+  .upArrow {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    right: 1200px;
+    top: 120px; /* Position the up arrow 20px from the top */
+    
+  }
+
+
+
+.downArrow {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  right: 1200px;
+  top: 520px; /* Position the down arrow further down to create space */
+}
+
+
+  
+.upArrow:hover,
+.downArrow:hover {
+  animation: shake 0.5s ;
+}
+
+@keyframes shake { 
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Target the fifth image and add the blur effect */
+.thumbnail:nth-child(5)::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 4.6%;
+  height: 5%; /* This controls the height of the blurred part */
+  background: rgba(255, 255, 255, 0.3); /* Add a semi-transparent overlay */
+  backdrop-filter: blur(5px); /* Apply the blur effect */
+  border-radius: 0 0 10% 10%; /* Match the border radius of the image */
+  pointer-events: none; /* Ensure it doesn't block clicks */
+  margin-bottom: 112px;
+  margin-left: 45px;
+}
+
+
+
+.specTitle {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: -70px;
+  text-align: left;
+  color: black;
+  margin-left: -550px;
+  margin-top: 50px;
+}
+
+
+.specTablesContainer {
+  display: flex;
+  gap: 20px; /* Spacing between the two tables */
+  justify-content: space-between; /* Ensure the tables are aligned beside each other */
+  margin-left: -550px;
+  margin-top: 100px;
+  width: 160%;
+}
+
+.specificationsTable {
+  width: 70%; /* Ensure each table takes roughly half the container width */
+}
+
+.specTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.specTable th {
+  background-color: #f0f0f0;
+  padding: 10px;
+  font-size: 1.1rem;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+  border-radius: 30px;
+}
+
+.specTable td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.9rem;
+}
+
+.specLabel {
+  font-weight: bold;
+  width: 40%;
+  color: #555;
+}
+
+.specValue {
+  color: #333;
+}
+
+.specTable tr:hover {
+  background-color: #f9f9f9;
+}
+
+.h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.specSection {
+  margin-bottom: 20px;
+}

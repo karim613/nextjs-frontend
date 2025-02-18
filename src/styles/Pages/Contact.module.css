@@ -1,0 +1,77 @@
+/* src/styles/Contact.module.css */
+
+.header {
+  background-color: #ffb7d5;
+  background: linear-gradient(135deg, #ffc1cc, #c71585);
+  padding: 60px 0;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-family: "Swipe Title", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  color: #1A1523;
+}
+
+.container {
+  display: flex;
+  padding: 40px 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sidebar {
+  width: 25%;
+  padding-right: 40px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+  color: #1A1523;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  width: 75%;
+}
+
+.content h2 {
+  font-size: 1.5rem;
+  font-family: "Arial", sans-serif;
+  margin-top: 20px;
+  color: #1A1523;
+}
+
+.content p {
+  font-size: 1rem;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #1A1523;
+  margin-bottom: 20px;
+}
+
+.content a {
+  color: #1A1523;
+  text-decoration: underline;
+}
+
+.content a:hover {
+  color: #1A1523;
+  text-decoration: none;
+}

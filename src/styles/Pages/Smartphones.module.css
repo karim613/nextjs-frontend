@@ -1,0 +1,1165 @@
+/* Container layout */
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Sticky Wrapper */
+.stickyWrapper {
+  position: sticky;
+  top: 20px; /* Keeps the filter section 20px from the top of the viewport */
+  align-self: flex-start; /* Ensures the sticky element aligns to the start */
+}
+
+/* Filter Section */
+.filterSection {
+  width: 240px;
+  background-color: transparent;
+  border-radius: 10px;
+  transition: all 0.1s ease;
+  overflow: hidden; /* Hide overflow; SimpleBar will handle scrolling */
+}
+
+/* Customize SimpleBar Scrollbar */
+.simplebar-scrollbar:before {
+  background: linear-gradient(180deg, #444445, #444445);
+  border-radius: 8px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Scrollbar Thumb Hover Effect */
+.simplebar-scrollbar:hover:before {
+  background: linear-gradient(180deg, #333333, #444445);
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Hide scrollbar until hover */
+.simplebar-scrollbar {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show scrollbar on hover */
+.simplebar-hover .simplebar-scrollbar {
+  opacity: 1;
+}
+
+
+
+/* Optional: Smooth scrolling */
+.filterSection {
+  scroll-behavior: smooth;
+}
+
+/* Filter Title */
+.filterTitle {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+
+
+/* Add this to your existing CSS file */
+
+/* Search Bar Styles */
+.searchBar {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.searchInput {
+  width: 91%;
+  padding: 10px 20px 10px 50px;
+  border-radius: 25px; /* Border radius 50% */
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  margin-top: 10px;
+  background-color: rgb(247 250 252);
+  background-color: #f8f8fe;
+  font-size: 0.950rem;
+}
+
+.searchInput:focus {
+  border-color: #0070f3;
+  border-color: #777;
+}
+
+.searchInput::placeholder {
+  color: #999;
+  font-size: 0.950rem;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('/icons/search.svg'); /* Use a professional search icon */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.searchBar:hover .searchInput {
+  border-color: #0070f3;
+  border-color: #777;
+}
+
+/* You can add more animations or hover effects as needed */
+
+
+.searchIcon {
+  margin-top: 5px;
+  position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Filter Category */
+.filterCategory {
+  margin-bottom: 25px;
+  transition: all 0.1s ease;
+}
+
+.filterCategoryTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* Labels */
+.filterCategory label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.1s ease;
+  margin-right: -100px;
+}
+
+.filterCategory label:hover {
+  color: black;
+}
+
+/* Custom Checkbox */
+.filterCategory input[type='checkbox'] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #bbb;
+  border-radius: 50%;
+  margin-right: 12px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.1s ease, border-color 0.1s ease;
+}
+
+.filterCategory input[type='checkbox']::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  background: transparent;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 0.1s ease;
+}
+
+.filterCategory input[type='checkbox']:checked {
+  background-color: black;
+  border-color: black;
+}
+
+.filterCategory input[type='checkbox']:checked::before {
+  background-color: #fff;
+  transform: scale(1);
+}
+
+.filterCategory input[type='checkbox']:hover {
+  border-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Slider container */
+.sliderContainer {
+  position: relative;
+  width: 90%;
+  height: 30px;
+  margin-left: px;
+}
+
+/* Slider track */
+.sliderTrack {
+  position: absolute;
+  height: 6px;
+  background: #ddd;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Slider thumbs (handles) */
+.sliderThumb {
+  position: absolute;
+  pointer-events: none;
+  -webkit-appearance: none;
+  width: 100%;
+  background: none;
+  outline: none;
+  top: 0;
+  left: 0;
+}
+
+.sliderThumb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  pointer-events: all;
+  width: 16px;
+  height: 16px;
+  background: #888;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Left thumb */
+.sliderThumbLeft {
+  z-index: 3;
+}
+
+/* Right thumb */
+.sliderThumbRight {
+  z-index: 4;
+}
+
+/* Fill between handles */
+.sliderContainer::before {
+  content: '';
+  position: absolute;
+  height: 6px;
+  background: #aaa;
+  background: black;
+  top: 50%;
+  transform: translateY(-50%);
+  left: calc((var(--min) / 3000) * 100%);
+  right: calc(100% - (var(--max) / 3000) * 100%);
+  z-index: 2;
+}
+
+/* Price labels */
+.priceLabels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-right: 23.5px;
+}
+
+
+
+
+
+
+
+/* Updated Slider thumbs (handles) */
+.sliderThumb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  pointer-events: all;
+  width: 22px;
+  height: 22px;
+  background: #888;
+  background: black;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 4px; /* Adjusted to align with the track */
+}
+
+.sliderThumb::-moz-range-thumb {
+  pointer-events: all;
+  width: 19px;
+  height: 19px;
+  background: #888;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Price Inputs */
+.priceInputs {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: -4px;
+}
+
+.priceInput {
+  width: 100px;
+  padding: 6px 8px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.priceInput:focus {
+  border-color: black;
+  outline: none;
+}
+
+.priceInputs span {
+  color: #777;
+}
+
+.priceInput:hover {
+  border-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Filter Option Label */
+.filterOption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+/* Adjust input and text alignment */
+.filterOption input {
+  margin-right: 8px;
+}
+
+.filterOption span {
+  flex-grow: 1;
+  min-width: 100px; /* Set a minimum width for consistency */
+  max-width: 150px; /* Optional: adjust this based on how much space you want */
+  display: inline-block;
+  text-align: left; /* Ensures text is aligned properly */
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden; /* Ensures long text doesn't overflow */
+  text-overflow: ellipsis; /* Adds '...' if the text is too long */
+}
+
+/* Filter Count */
+.filterCount {
+  margin-left: 8px;
+  color: #777;
+}
+
+
+
+
+
+.productCount {
+  margin-top: -50px;
+}
+
+
+
+
+
+/* Clear All Filters Button */
+.clearAllButton {
+  border: none;
+  background: none;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  color: black;
+  margin-left: 16px;
+}
+
+.clearAllButton:hover {
+  text-decoration: none;
+}
+
+
+
+
+
+
+.selectedFilters {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.selectedFilters.filtersActive {
+  margin-top: 20px;
+  border-top: 1px solid #e4e3e3;
+  padding-top: 10px;
+}
+
+
+.filterChip {
+  background-color: black;
+  color: white;
+  padding: 5px 15px 5px 15px;
+  border-radius: 25px; /* Border radius 50% */
+  margin: 0px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.s;
+  font-size: 0.9rem;
+}
+
+.filterChip:hover {
+  background-color: #333;
+}
+
+.removeIcon {
+  margin-left: 8px;
+  font-size: 16px;
+  line-height: 1;
+}
+
+
+
+
+
+.clearAllFiltersButton{
+  border: none;
+  background: none;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  color: black;
+  font-size: 1.01rem;
+  margin-left: 15px;
+}
+
+
+.clearAllFiltersButton:hover {
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+/* Product Section */
+.productSection {
+  flex-grow: 1;
+  position: relative;
+}
+
+
+/* Sort By Container */
+.sortByContainer {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 20px;
+  margin-left: 880px;
+}
+
+/* Sort By Button */
+.sortByButton {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+
+.sortByButton:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Arrow down */
+.arrowDown {
+  margin-left: 5px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #333;
+  transition: transform 0.3s ease;
+}
+
+.arrowDown.open {
+  transform: rotate(180deg);
+}
+
+/* Sort Options */
+.sortOptions {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 5px;
+  list-style: none;
+  padding: 10px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 999; /* Ensure it's below the navbar */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: max-content;
+  transform-origin: top;
+  animation: slideDownFromButton 0.3s ease-out forwards;
+}
+
+/* Adjust the list items */
+.sortOptions li {
+  display: block;
+  width: 100%; /* Full width of each item */
+}
+
+/* Sort Option Label */
+.sortOptionLabel {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px 20px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.sortOptionLabel:last-child {
+  margin-bottom: 0;
+}
+
+.sortOptionLabel:hover {
+  background-color: #f8f8fc;
+}
+
+/* Hide the default radio button */
+.sortOptionLabel input[type="radio"] {
+  display: none;
+}
+
+/* Custom Checkbox */
+.customCheckbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* Checked State */
+.sortOptionLabel input[type="radio"]:checked + .customCheckbox {
+  border-color: black;
+  background-color: black;
+}
+
+.customCheckbox::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+/* Show inner circle when checked */
+.sortOptionLabel input[type="radio"]:checked + .customCheckbox::after {
+  opacity: 1;
+}
+
+/* Smooth Slide-Down Animation from Button */
+@keyframes slideDownFromButton {
+  from {
+    opacity: 0;
+    transform: scaleY(0); /* Start at no height */
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1); /* Expand to full height */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* Product Grid */
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Product Card */
+.productCard {
+  background-color: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  height: 380px;
+  transition: height 0.3s ease;
+}
+
+.productCard:hover,
+.expandedCard {
+  height: 450px;
+}
+
+.productCard:hover .imageWrapper img,
+.expandedCard .imageWrapper img {
+  transform: scale(1.1);
+}
+
+/* Adjusted Image Wrapper to give more space to the image */
+.imageWrapper {
+  height: 70%;
+  margin-bottom: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .7s ease;
+  padding-top: -10px;
+}
+
+
+
+/* Compare Box */
+.compareBox {
+  position: absolute;
+  top: -9px;
+  left: 0px;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 2;
+  cursor: pointer;
+  transition: all 0.3s ease, opacity 0.3s ease, transform 0.s ease;
+  opacity: 0;
+
+}
+
+.compareBox:hover {
+  transform: scale(1.05);
+}
+
+.productCard:hover .compareBox,
+.expandedCard .compareBox {
+  opacity: 1;
+}
+
+/* Quick Shop Button */
+.quickShopBtn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 110px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(20px) scale(1);
+  transition: transform 0.2s ease, color 0.2s ease, background-color 0.2s ease, opacity 0.3s ease;
+}
+
+.productCard:hover .quickShopBtn,
+.expandedCard .quickShopBtn {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Hover effect on Quick Shop Button */
+.productCard:hover .quickShopBtn:hover,
+.expandedCard .quickShopBtn:hover {
+  background-color: black;
+  background-color: rgb(255, 168, 205);
+  color: black;
+  transform: translateY(0) scale(1.05);
+}
+
+/* Input and label interaction */
+.compareBox input[type='checkbox'] {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* Compare Label */
+.compareLabel {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.compareLabel:hover {
+  color: #007bff;
+}
+
+/* Product Information */
+.productName {
+  position: relative;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-top: 0px;
+  color: #555;
+  transition: margin-top 0.3s ease;
+}
+
+.productCard:hover .productName,
+.expandedCard .productName {
+  margin-top: -15px;
+}
+
+.productPrice {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 4px;
+}
+
+.productStores {
+  font-size: 12px;
+  color: #555;
+}
+
+
+
+/* Custom Checkbox Styling in Compare Box */
+.compareBox input[type='checkbox'] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.compareLabel {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #333;
+  padding-left: 28px;
+  border-radius: 4px;
+  transition: color 0.3s ease;
+  background-color: transparent;
+}
+
+.compareLabel::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border: 2px solid #333;
+  border-radius: 2px;
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+  box-sizing: border-box;
+}
+
+.compareLabel::after {
+  content: '';
+  position: absolute;
+  left: 10.5px;
+  top: 4.5px;
+  width: 3px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg) scale(0);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.compareLabel:hover::before {
+  border-color: black;
+}
+
+.compareLabel:hover {
+  color: black;
+}
+
+.compareBox input[type='checkbox']:checked + .compareLabel::before {
+  background-color: black;
+  border-color: black;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.compareBox input[type='checkbox']:checked + .compareLabel::after {
+  transform: rotate(45deg) scale(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.compareList {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f9fafc; /* Soft background color */
+  background-color: #ffffff;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1000;
+  transform: translateY(0); /* Visible by default */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Compare Header */
+.compareHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+  margin-left: 15px; /* Reduced left margin */
+  cursor: pointer; /* Add cursor pointer */
+}
+
+/* Header Info (Title and Notification) */
+.headerInfo {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between title and notification */
+}
+
+.notification {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+/* Toggle Compare List Button */
+.toggleCompareList {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Arrow Icon */
+.arrow {
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #333; /* Down arrow by default */
+  transition: transform 0.3s ease;
+}
+
+.arrow.up {
+  transform: rotate(180deg); /* Up arrow when list is expanded */
+}
+
+.arrow.down {
+  transform: rotate(0deg); /* Down arrow when list is collapsed */
+}
+
+
+
+/* Compare Content */
+.compareContent {
+  display: flex; /* Use flexbox to align items next to each other */
+  flex-wrap: wrap; /* Allows the items to wrap onto the next line if needed */
+  max-height: 500px; /* Adjust based on content */
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding-top: 10px;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.compareContent.closed {
+  max-height: 0;
+  padding-top: 0;
+}
+
+/* Product Card Wrapper */
+.compareItem {
+  display: flex;
+  align-items: center;
+  background-color: transparent; /* Removed conflicting background-color */
+  padding: 12px; /* Fixed padding */
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 315px; /* Fixed width for consistency */
+  margin-bottom: 8px; /* Reduced space between cards */
+  height: 120px; /* Fixed height */
+  gap: 20px; /* Gap between image and content */
+  position: relative; /* For absolute positioning of the remove button */
+  gap: 10px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.compareItem:hover {
+  transform: scale(1.01);
+}
+
+/* Image on the left */
+.compareItem img {
+  width: 120px; /* Fixed width */
+  height: 165px; /* Fixed height */
+  object-fit: cover;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.5s ease;
+  margin-right: -20px;
+  padding-right: 20px;
+}
+
+.compareItem:hover img {
+  transform: scale(1.1);
+}
+
+/* Product information on the right */
+.compareDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1; /* Allows details to take up remaining space */
+}
+
+.compareDetails p {
+  margin: 3px; /* Slightly reduced margins */
+}
+
+.compareDetails p.productName {
+  font-weight: bold;
+  font-size: 1.2rem; /* Increased font size */
+  margin-bottom: 5px; /* More space under the name */
+}
+
+.compareDetails p.productPrice {
+  font-size: 1.1rem; /* Adjusted price font size */
+  display: flex;
+  align-items: center;
+}
+
+.compareDetails p.productPrice span {
+  margin-left: 5px; /* Proper spacing between price and currency */
+}
+
+/* Remove Button */
+.removeCompareItem {
+  position: absolute; /* Absolute positioning within the compareItem */
+  top: 80px; /* Fixed position from the top */
+  right: 10px; /* Fixed position from the right */
+  background-color: transparent;
+  color: black;
+  border: none;
+  padding: 6px 12px; /* Slightly bigger button */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.removeCompareItem:hover {
+  box-shadow: 0 4px 6px rgba(0.1, 0.1, 0.1, 0.1);
+}
+
+/* Responsive Adjustments (Optional) */
+@media (max-width: 1024px) {
+  .compareItem {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
+
+
+/* Empty Compare Item */
+.emptyCompareItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff; /* White background */
+  border: 1px solid #ddd; /* Fine borders */
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  width: 315px; /* Same width as .compareItem */
+  height: 120px; /* Same height as .compareItem */
+  margin-bottom: 8px; /* Consistent spacing */
+  margin-left: 15px; /* Align with .compareItem */
+  color: #949494;
+}
+
+.emptyCompareItem:hover {
+  transform: scale(1.0);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+}
+
+
+
+/* Compare Items Wrapper */
+.compareItemsWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Compare Button */
+.compareButton {
+  padding: 10px 16px;
+  font-size: 1rem;
+  background-color: gray;
+  color: black;
+  border: none;
+  border-radius: 7px;
+  cursor: default;
+  margin-left: 1055px; /* Pushes the button to the right */
+  position: absolute;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.compareButton:not(:disabled) {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.compareButton:not(:disabled):hover {
+  background-color: rgb(255, 168, 205);
+  color: black;
+}
+
+
+
+
+/* Clear All Button */
+.clearAllButton {
+  margin-left: 1215px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  background-color: transparent;
+  color: #121212; /* Black text */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

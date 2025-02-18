@@ -1,0 +1,188 @@
+/* Overlay for background dim */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Modal Container */
+  .modal {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    width: 700px;
+    height: 600px;
+    
+    padding: 30px;
+    position: relative;
+    text-align: center;
+  }
+  
+  /* Header Section */
+  .header {
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .backButton {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .brand {
+    background: #ffb3d9;
+    background: linear-gradient(10deg, #000000, #2a003d);
+    color: #000;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+  }
+  
+  .closeButton {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .backButton{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  
+  /* Title and Subtitle */
+  .title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  
+  .subtitle {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .link {
+    color: #6a1b9a;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+
+  /* Form */
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .inputContainer {
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    
+  }
+  
+  .input {
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    outline: none;
+    margin-bottom: 20px;
+    color: #333
+  }
+  
+  /* Info Text */
+  .infoText {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 16px;
+  }
+  
+  /* Resend Button (Large) */
+  .submitButton {
+    width: 100%;
+    background: #0c0c0c;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 24px;
+    cursor: pointer;
+    border: none;
+    
+  }
+  
+  .submitButton:hover {
+    background: #1a1a1a;
+  }
+  
+
+
+
+
+  /* Smaller Screens (Tablet, Mobile) */
+@media (max-width: 768px) {
+  .modal {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+  }
+
+  .closeButton {
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    
+  }
+
+  .backButton{
+    
+    position: absolute;
+    left: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+  }
+}
