@@ -11,8 +11,8 @@ type Category = {
 };
 
 const categories: Category[] = [
-  { name: 'Technology', imageUrl: '/images/technology.jpg' },
-  { name: 'Fashion', imageUrl: '/images/fashion.jpg' },
+  { name: 'Technology', imageUrl: '/images/amazon.jpg' },
+  { name: 'Fashion', imageUrl: '/images/backmarket.jpg' },
   { name: 'Home', imageUrl: '/images/home.jpg' },
   { name: 'Beauty', imageUrl: '/images/beauty.jpg' },
   { name: 'Sports', imageUrl: '/images/sports.jpg' },
@@ -64,7 +64,7 @@ const Categories: React.FC = () => {
                   alt={category.name} 
                   className={styles.brandImage}
                   width={150} // adjust width as needed
-                  height={150} // adjust height as needed
+                  height={200} // adjust height as needed
                 />
               <p>{category.name}</p>
             </div>

@@ -11,15 +11,15 @@ type Brand = {
 };
 
 const brands: Brand[] = [
-  { name: 'Sephora', imageUrl: '/images/sephora.jpg', websiteUrl: 'https://www.sephora.com' },
-  { name: 'BackMarket', imageUrl: '/images/backmarket.jpg', websiteUrl: 'https://www.backmarket.com' },
-  { name: 'Airbnb', imageUrl: '/images/airbnb.jpg', websiteUrl: 'https://www.airbnb.com' },
-  { name: 'Nike', imageUrl: '/images/nike.jpg', websiteUrl: 'https://www.nike.com' },
-  { name: 'Apple', imageUrl: '/images/apple.jpg', websiteUrl: 'https://www.apple.com' },
-  { name: 'Adidas', imageUrl: '/images/adidas.jpg', websiteUrl: 'https://www.adidas.com' },
+  { name: 'Guerlain', imageUrl: '/images/sephora.jpg', websiteUrl: 'https://www.sephora.com' },
+  { name: 'Airbnb', imageUrl: '/images/backmarket.jpg', websiteUrl: 'https://www.backmarket.com' },
+  { name: 'Givenchy', imageUrl: '/images/airbnb.jpg', websiteUrl: 'https://www.airbnb.com' },
+  { name: 'Zara', imageUrl: '/images/amazon.jpg', websiteUrl: 'https://www.nike.com' },
+  { name: 'Sephora', imageUrl: '/images/apple.jpg', websiteUrl: 'https://www.apple.com' },
+  { name: 'Lancôme', imageUrl: '/images/adidas.jpg', websiteUrl: 'https://www.adidas.com' },
   { name: 'Zara', imageUrl: '/images/zara.jpg', websiteUrl: 'https://www.nike.com' },
-  { name: 'Samsung', imageUrl: '/images/samsung.jpg', websiteUrl: 'https://www.apple.com' },
-  { name: 'Amazon', imageUrl: '/images/amazon.jpg', websiteUrl: 'https://www.adidas.com' },
+  { name: 'Zara', imageUrl: '/images/samsung.jpg', websiteUrl: 'https://www.apple.com' },
+  { name: 'Zara', imageUrl: '/images/amazon.jpg', websiteUrl: 'https://www.adidas.com' },
 ];
 
 const Brands: React.FC = () => {
@@ -68,7 +68,7 @@ const Brands: React.FC = () => {
                   alt={brand.name} 
                   className={styles.brandImage}
                   width={150} // adjust width as needed
-                  height={150} // adjust height as needed
+                  height={200} // adjust height as needed
                 />
                 <p>{brand.name}</p>
               </a>

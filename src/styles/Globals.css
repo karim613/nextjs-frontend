@@ -17,9 +17,10 @@
   
   /* Ensure links are styled consistently */
   a {
-    color: #0070f3;
+    color: #000000;
     text-decoration: none;
   }
+  
   
   a:hover {
     text-decoration: underline;

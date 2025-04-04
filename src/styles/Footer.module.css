@@ -17,7 +17,8 @@
 }
 
 .logo {
-  color: #FFB7D5; /* Swipe logo color */
+  /*color: #FFB7D5; /* Swipe logo color */
+  color: #ffffff;
   font-size: 24px;
   margin-bottom: 20px;
 }

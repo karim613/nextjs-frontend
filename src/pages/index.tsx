@@ -6,7 +6,7 @@ import Hero from '../components/Hero';
 import Features from '../components/Features';
 import Brands from '../components/Brands';
 import Footer from '../components/Footer';
-import Categories from '../components/Categories';
+//import Categories from '../components/Categories';
 import Lowerfooter from '../components/Lowerfooter';
 
 const Home: React.FC = () => {
@@ -17,7 +17,7 @@ const Home: React.FC = () => {
       <div id="next-section">
         <Features />
         <Brands /> {/* Updated to include the Brands component */}
-        <Categories />
+        <Brands />
       </div>
       <Footer />
       <Lowerfooter />

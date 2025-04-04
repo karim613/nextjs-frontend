@@ -38,12 +38,12 @@ const Navbar: React.FC = () => {
           <span className={styles.closeMenu} onClick={closeMenu}>✕</span>
         </div>
         <ul className={styles.sideNavLinks}>
-          <li><a href="#">Acheter avec Klarna</a></li>
+          <li><a href="#">Acheter avec Swipe</a></li>
           <li><a href="#">Espace entreprises</a></li>
           <hr />
           <li><a href="#">Shopping</a></li>
           <li><a href="#">Finances</a></li>
-          <li><a href="#">Qu&apos;est ce que Klarna</a></li>
+          <li><a href="#">Qu&apos;est ce que Swipe</a></li>
           <li><a href="#">Aide</a></li>
         </ul>
         <div className={styles.sideButtonGroup}>

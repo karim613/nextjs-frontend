@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
 
   return (
     <section className={styles.hero}>
-      <h1>Payez en 3 fois sans intérêt</h1>
+      <h1>Payez en 4 fois sans intérêt</h1>
       <p>Discover fast, easy, and secure payment solutions.</p>
       <button className={styles.ctaBtn}>Get Started</button>
 

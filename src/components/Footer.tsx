@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
       <div className={styles.logoSection}>
         <h2 className={styles.logo}>Swipe</h2>
         <div className={styles.countrySelector}>
-          <span role="img" aria-label="France">🇫🇷</span> France <span className={styles.arrow}>→</span>
+          <span role="img" aria-label="Tunisia"></span> Follow <span className={styles.arrow}>→</span>
         </div>
         <div className={styles.socialIcons}>
           <FontAwesomeIcon icon={faFacebookF} className={styles.icon} />
