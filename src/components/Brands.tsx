@@ -11,15 +11,15 @@ type Brand = {
 };
 
 const brands: Brand[] = [
-  { name: 'Guerlain', imageUrl: '/images/sephora.jpg', websiteUrl: 'https://www.sephora.com' },
-  { name: 'Airbnb', imageUrl: '/images/backmarket.jpg', websiteUrl: 'https://www.backmarket.com' },
-  { name: 'Givenchy', imageUrl: '/images/airbnb.jpg', websiteUrl: 'https://www.airbnb.com' },
-  { name: 'Zara', imageUrl: '/images/amazon.jpg', websiteUrl: 'https://www.nike.com' },
-  { name: 'Sephora', imageUrl: '/images/apple.jpg', websiteUrl: 'https://www.apple.com' },
-  { name: 'Lancôme', imageUrl: '/images/adidas.jpg', websiteUrl: 'https://www.adidas.com' },
-  { name: 'Zara', imageUrl: '/images/zara.jpg', websiteUrl: 'https://www.nike.com' },
-  { name: 'Zara', imageUrl: '/images/samsung.jpg', websiteUrl: 'https://www.apple.com' },
-  { name: 'Zara', imageUrl: '/images/amazon.jpg', websiteUrl: 'https://www.adidas.com' },
+  { name: 'Fatales', imageUrl: '/images/fatales.jpg', websiteUrl: 'https://www.fatales.tn' },
+  { name: 'Tunisianet', imageUrl: '/images/tunisianet.jpg', websiteUrl: 'https://www.tunisianet.com.tn' },
+  { name: 'Point M', imageUrl: '/images/pointm.jpg', websiteUrl: 'https://www.pointm.tn' },
+  { name: 'Zara', imageUrl: '/images/zara.jpg', websiteUrl: 'https://www.zara.com/tn' },
+  { name: 'Peak', imageUrl: '/images/peak.jpg', websiteUrl: 'https://www.peaksports.tn' },
+  { name: 'Mytek', imageUrl: '/images/mytek.jpg', websiteUrl: 'https://www.mytek.tn' },
+ // { name: 'Zara', imageUrl: '/images/zara.jpg', websiteUrl: 'https://www.nike.com' },
+ // { name: 'Zara', imageUrl: '/images/samsung.jpg', websiteUrl: 'https://www.apple.com' },
+ // { name: 'Zara', imageUrl: '/images/amazon.jpg', websiteUrl: 'https://www.adidas.com' },
 ];
 
 const Brands: React.FC = () => {

@@ -7,8 +7,7 @@ const Lowerfooter: React.FC = () => {
     return (
       <footer className={styles.Lowerfooter}>
         <div className={styles.copyright}>
-          © 2025 Swipe. Headquarters: Lac 1, 1053 Tunis, Tunisia. All rights reserved.
-          <br></br> Organization number: 111111-1111
+          © 2025 Swipe. All rights reserved.
         </div>
         <div className={styles.bottomLinks}>
           <a href="#">Conditions</a>
